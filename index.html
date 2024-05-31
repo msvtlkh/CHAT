@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="chat__container">
+            <div class="header__btns">
+                <button class="btn__settings" id="changeNameWindowOpenBtn">
+                    <img src="./image/setting.svg" class="icon setting__icon" alt="setting">
+                </button>
+                <button class="btn__log_in" id="logIn">
+                    <img src="./image/logOut.png" class="icon login__icon" alt="log in">
+                </button>
+            </div>
+
+
+            <div class="wrapper__windowchat">
+                <div class="chat__window" id="messageContainer">
+                    <template id="myMessageTemplate">
+                        <div class="message" id="myMessage"></div> 
+                    </template>
+                </div>
+            </div>
+
+            <form method="post" class="bottom__btns" id="formMessage">
+                <input type="text" class="input__message" id="inputMessage" placeholder="Введите сообщение...">
+                <button class="btn__send" id="sendMessageBtn" type="submit">
+                    <img src="./image/send.png" class="icon send__icon" alt="send">
+                </button>
+            </form>
+        </div>
+
+
+        <div class="popup__wrapper popup__wrapper--change" id="changeNameWindow">
+            <div class="popup popup--change">
+                <button class="btn__close" id="closeChangeNameWindow">
+                    <img src="./image/cross.png" alt="cross" class="icon btn__icon">
+                </button>
+
+                <div class="header__container">
+                    <div class="setting__title">Настройки</div>
+                </div>
+    
+                <div class="name__title">Введите пожалуйста свой ник</div>
+    
+                <form method="get" class="form form__name" id="changeNameForm">
+                    <input type="text" class="input name__input" id="changeNameInput" placeholder="Введите своё имя">
+
+                    <button class="change" type="submit" id="submitName">
+                        <img src="./image/arrow.png" alt="arrow" class="icon change__icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup__wrapper popup__wrapper--authorization" id="authorizationWindow">
+            <div class="popup popup--authorization">
+                <button class="btn__close" id="closeAuthorization">
+                    <img src="./image/cross.png" alt="cross" class="icon close__icon">
+                </button>
+                <div class="header__container">
+                    <div class="setting__title">Авторизация</div>
+                </div>
+    
+                <div class="name__title">Введите свою почту для авторизации</div>
+    
+                <form method="post" class="form__email" id="formEmail">
+                    <input type="text" class="input email__input" id="emailInput" placeholder="Введите свою почту">
+
+                    <div class="btn__wrapper">
+                        <button type="submit" class="btn__code btn__code--get" id="getCode">ПОЛУЧИТЬ КОД</button>
+                        <button type="button" class="btn__code btn__code--enter" id="enterCodeBtn">ВВЕСТИ КОД</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup__wrapper popup__wrapper--submit" id="enterCodeWindow">
+            <div class="popup popup--submit" id="submit">
+                <button class="btn__close" id="closeEnterCodeWindowBtn">
+                    <img src="./image/cross.png" alt="cross" class="icon btn__icon">
+                </button>
+
+                <div class="header__container">
+                    <div class="setting__title">Подтверждение</div>
+                </div>
+    
+                <div class="name__title">Введите пожалуйста код потдверждения</div>
+    
+                <form method="get" class="form form__code" id="enterCodeForm">
+                    <input type="text" class="input code__input" id="inputCode" placeholder="Введите код">
+
+                    <button type="submit" id="submitCode">
+                        <img src="./image/arrow.png" alt="arrow" class="icon change__icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

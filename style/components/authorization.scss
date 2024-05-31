@@ -1,0 +1,57 @@
+.popup__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form {
+    width: 100%;
+}
+
+.btn__close {
+    border: 0;
+    padding: 0;
+}
+
+.btn__code {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #5188C1;
+    border-radius: 4px;
+    padding: 8px 5px;
+    width: 104px;
+    margin-bottom: 15px;
+}
+
+.name__title{
+    &--authorization {
+        margin-bottom: 10px;
+    }
+}
+
+.input {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: #7F91A4;
+    font-size: 12px;
+    font-weight: 300;
+
+    &::placeholder {
+        color: #7F91A4;
+    }
+}
+
+.nickname__input {
+    outline: none;
+}
+
+.btn__wrapper {
+    border-top: 1px solid #7F91A4;
+    padding: 20px 0px;
+}

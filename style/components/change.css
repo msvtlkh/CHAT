@@ -1,0 +1,88 @@
+.btn__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 20px;
+}
+
+.btn__icon {
+  height: 20px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.setting__title {
+  font-size: 16px;
+}
+
+.name__title {
+  color: #7F91A4;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.form__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px #7F91A4 solid;
+  margin-bottom: 15px;
+}
+
+.nickname__input {
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+}
+.nickname__input::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7F91A4;
+}
+.nickname__input::-moz-placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7F91A4;
+}
+.nickname__input:-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7F91A4;
+}
+.nickname__input::-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7F91A4;
+}
+.nickname__input::placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7F91A4;
+}
+
+.change__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #7F91A4;
+}
+
+.change {
+  margin-top: 3px;
+}
+
+.change__icon {
+  height: 15px;
+}

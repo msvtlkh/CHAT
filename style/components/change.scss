@@ -1,0 +1,58 @@
+.btn__close {
+    display: flex;
+    align-self: flex-end;
+    height: 20px;
+}
+
+.btn__icon {
+    height: 20px;
+}
+
+.header__container {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.setting__title {
+    font-size: 16px;
+}
+
+.name__title {
+    color: #7F91A4;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.form__name {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #7F91A4 solid;
+    margin-bottom: 15px;
+}
+
+.nickname__input {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+
+    &::placeholder {
+        font-size: 12px;
+        font-weight: 300;
+        color: #7F91A4;
+    }
+}
+
+.change__name {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #7F91A4;
+}
+
+.change {
+    margin-top: 3px;
+}
+
+.change__icon {
+    height: 15px;
+}
